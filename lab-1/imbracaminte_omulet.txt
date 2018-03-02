@@ -1,0 +1,16 @@
+cap(ploua, umbrela).
+cap(ninge, caciula).
+cap(soare, sapca).
+
+haina(ger, palton).
+stare(-20,0,ger).
+stare(1,20,cald).
+stare(21,50,moarte).
+
+incaltaminte(ploua,_,cizme).
+incaltaminte(baltoace,_,ghete).
+incaltaminte(uscat,freg,adidasi).
+incaltaminte(uscat,cald,sandale).
+
+%azi (+ temperatura, +precipitatii, +teren, -cap, -haina, -incaltaminte)
+%azi(Temp,P,t,c,h,i):-cap(P,C),stare(Tmin,Tmax,vreme),Tmin=<Temp,Temp<Tmax
